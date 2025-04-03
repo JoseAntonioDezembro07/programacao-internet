@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    
+}
+.logo-texto{
+    color:rgb(189, 129, 17);
+
+}
+.logo-imagem{
+    align-items: center;
+
+}
