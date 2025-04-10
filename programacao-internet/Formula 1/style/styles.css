@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100;
+    background-color: black;
+    display: flex;
+    
+    
+}
+.logo-texto{
+    color:rgb(168, 112, 8);
+margin-left: 150px;
+margin-top: -32px;
+font-size: 18px;
+font-family: 'Courier New', Courier, monospace;
+}
+.logo-imagem{
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.bandeiras{
+    width: 40px;
+    height: 24px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #262626;
+}
+.nacionalidade{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 4px;
+    border: 2px solid;
+    border-color: #d1d1d1;
+    
+}
+.subiu{
+   width: 20px;
+ text-align: right;
+}
+.desceu{
+    width: 14px;
+  text-align: right;
+    
+}
+.laranja{
+    border-left: 4px solid #FF8000;
+    text-align: left;
+    padding: 8px 7px 8px 7px;
+    font-weight: bold;
+    
+}
+.azul{
+    border-left: 4px solid #2c53ff;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.verdeagua{
+    border-left: 4px solid #32e0ff;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.vermelho{
+    border-left: 4px solid red;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+    
+
+}
+.azulfraco{
+    border-left: 4px solid #8da7fa;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.cinza{
+    border-left: 4px solid gray;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.verdeforte{
+    border-left: 4px solid green;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.verdeclaro{
+    border-left: 4px solid #90fa5f;
+    text-align: left;
+    padding: 8px 7px 8px 7px;
+    font-weight: bold;  
+}
+.rosa{
+    border-left: 4px solid pink;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.azulcinza{
+    border-left: 4px solid #4ca6b6;
+    text-align: left;
+    padding: 8px 7px 8px 7px;  
+    font-weight: bold;
+}
+.posicao{
+    padding: 8px 7px 8px 7px;
+    font-size: 15px;
+  
+}
+
+
+.topo{
+background-color: black;
+color: white;
+font-weight: bold;
+}
+table{
+    border-spacing: 10px;
+    border-collapse: separate;
+    
+}
+.primeiro{
+    background-color: gold;
+}
+.segundo{
+    background-color: silver;
+}
+.terceiro{
+    background-color: #A67D3D;
+   
+}
+.time{
+font-weight: bold;
+    font-size: 15px;
+    
+}
