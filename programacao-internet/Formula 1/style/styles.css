@@ -3,13 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    width: 100%;
-    background-color: black;
-    display: flex;
-    
-    
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header .logo-texto p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.logo-imagem{
+    display: flex;
+    align-items: center;
+}
+
 .logo-texto{
     color:#a87008;
 margin-left: 400px;
@@ -115,15 +132,75 @@ font-family: 'Courier New', Courier, monospace;
 }
 
 
-.topo{
-background-color: black;
+.topo {
+    background-color: #444;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.topo-australia{
+    background-color: #444;
 color: white;
 font-weight: bold;
+
 }
-table{
- 
-    border-collapse: separate;
+table.australia td {
+    padding: 10px;
+}
+table.australia{
+    margin-top: 25px;
+}
+.topo-australia td {
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+table.geral td{
+    padding: 10px;
     
+}
+table.geral {
+    margin: 0 auto; 
+    
+    text-align: center; 
+    border: #000000;
+    border: 1px solid black; 
+}
+table.china td{
+    padding: 10px;
+    border: #000000;
+}
+table.china{
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+}
+table.japao td{
+    padding: 10px;
+    border: #000000;
+}
+table.japao{
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+table tr {
+    border-bottom: 1px solid black;
+  
 }
 .primeiro{
     background-color: gold;
@@ -144,19 +221,175 @@ font-weight: bold;
     color:#a87008;
    
 }
-.fia{
-    width: 100px;
+.fia, .f1{
+    height: 80px;
+    width: auto;
     border-radius: 10px;
     border-style: solid;
-    margin-left: 10px;
-    margin-top: 30px;
+    object-fit: contain;
+}.f1{
+    margin-left: 1150px; 
 }
-.f1{
-    width: 100px;
-    border-radius: 10px;
-    border-style: solid;
-    margin-top: -300px;
-    margin-left: 1300px;
-   
+table.australia {
+    background-image: url('../fotos/australia.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black; 
+    position: relative; 
+}
+
+
+table.australia::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 253, 255, 0.7); 
+    z-index: 1; 
+}
+
+table.australia tr, table.australia td, table.japoa td {
+    position: relative; 
+    z-index: 2;
+}
+table.china{
+    background-image: url('../fotos/china.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black; 
+    position: relative; 
+}
+
+table.china::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 124, 124, 0.7); 
+    z-index: 1; 
+}
+
+table.china tr, table.australia td, table.japao tr {
+    position: relative; 
+    z-index: 2;
+}
+.tabelas-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+
+
+table.australia, table.china, table.japao {
+    border: 1px solid black; 
+    width: 45%; 
+    text-align: center; 
+}
+table.japao{
+    background-image: url('../fotos/jp.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: rgb(51, 32, 32); 
+    position: relative; 
+}
+
+table.japao::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: 1; 
+}
+
+table.china tr, table.australia td, table.japao tr {
+    position: relative; 
+    z-index: 2;
+}
+.tabelas-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+table.australia, table.china, table.japao {
+    border: 1px solid black; 
+    width: 45%; 
+    text-align: center; 
+}
+table.geral {
     
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black; 
+    position: relative; 
 }
+
+
+table.geral::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 1; 
+}
+.tabelas-lado-a-lado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tabelas-lado-a-lado table {
+    border: 1px solid black;
+    width: 45%; 
+    text-align: center;
+}
+table.geral2{
+ 
+    
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        color: black; 
+        position: relative; 
+        margin: 0 auto;
+        margin-top: 0px;
+        text-align: center;
+        border: #000000;
+        border: 1px solid black;
+    }
+    table.geral2::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       
+        z-index: 1; 
+    }
+    table.geral td{
+        padding: 10px;
+        
+    }
+    table {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
